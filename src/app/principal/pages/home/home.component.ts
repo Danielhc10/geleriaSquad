@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  getPosts() {
+  private getPosts() {
     const request = this.trendsEnabled()
       ? this._arrivals.getPosts(this.query)
       : this._arrivals.getTrendsPosts();

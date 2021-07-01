@@ -1,4 +1,18 @@
-<span *ngIf="_user.logged; else img" [ngClass]="{ 'licked': bool }" (dblclick)="licked($event)">
+<div #modal class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        ¿Seguro quieres eliminar el post?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+          (click)="toogleModal = false">No</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="deletePost()">Sí</button>
+      </div>
+    </div>
+  </div>
+</div>
+<span *ngIf="_user.logged; else img" [ngClass]="{ 'licked': bool }">
   <img loading="lazy" class="img-fluid" [src]="post.image.url">
 </span>
 <ng-template #img>
