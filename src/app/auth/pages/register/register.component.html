@@ -13,7 +13,7 @@
         <div>
           <h3 id="heading">Registrarse</h3>
         </div>
-        <form [formGroup]="register">
+        <form (ngSubmit)="onSubmit()" [formGroup]="register">
           <input class="form-control" type="text" placeholder="Nickname" formControlName="nickname">
           <input class="form-control" type="email" placeholder="Correo" formControlName="email">
           <input class="form-control" type="password" placeholder="Contraseña" formControlName="password">

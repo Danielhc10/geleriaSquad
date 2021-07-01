@@ -1,20 +1,20 @@
 <div class="container text-center">
-    <h2>Categorías</h2>
-    <ul class="active">
-      <li *ngFor="let tag of tags" class="list-group-item list-group-item-action"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-          viewBox="0 0 16 16" fill="currentColor" class="bi bi-tags-fill">
+  <h2>Tags</h2>
+  <ul class="active">
+    <a *ngFor="let tag of tags" [routerLink]="['/home']" [queryParams]="{tags: tag._id}" class="text-decoration-none">
+      <li class="btn list-group-item list-group-item-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+          class="bi bi-tags-fill">
           <path fill-rule="evenodd"
             d="M3 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 7.586 1H3zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z">
           </path>
           <path
             d="M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z">
           </path>
-        </svg> Categoría 1</li>
-    </ul>
-    <div>
-      <nav class="pagination-tag">
-        <pagination [route]="['/home/tags']" [metadata]="metadata"></pagination>
-      </nav>
-    </div>
-  </div>
-  
+        </svg>
+        {{tag.name}}
+      </li>
+    </a>
+  </ul>
+  <pagination [route]="['/home/tags']" [metadata]="metadata"></pagination>
+</div>

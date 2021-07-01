@@ -32,14 +32,13 @@ export class ArrivalsService {
     return this._http.get<{ data: { toogle: boolean } }>(`${this.url}/like`, { params })
   }
 
-  getTags(page:number){
-    return this._http.get<DataPaginated<ITag>>(`${this.url}/tags/${page}`);
+  getTags(page: number) {
+    return this._http.get<DataPaginated<ITag>>(`${this.url}/tag/${page}`);
   }
 
-  listTags(){
-    return this._http.get<{ data: ITag[]}>(`${this.url}/tags`);
+  listTags() {
+    return this._http.get<{ data: ITag[] }>(`${this.url}/tag`);
   }
-
 }
 
 

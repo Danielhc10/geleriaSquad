@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   selector: 'app-tags',
   templateUrl: './tags.component.html',
   styleUrls: ['./tags.component.scss'],
-  host: { class: 'p-3'}
+  host: { class: 'p-3' }
 })
 export class TagsComponent implements OnInit {
   tags: ITag[];
@@ -18,11 +18,11 @@ export class TagsComponent implements OnInit {
   constructor(
     private _route: ActivatedRoute,
     private _arrivals: ArrivalsService,
-  ) { 
-    
+  ) {
+
     this.tags = new Array<ITag>();
-    this.page= 1;
-    this.metadata = { 
+    this.page = 1;
+    this.metadata = {
       totalDocs: 0,
       limit: 0,
       page: 1,
@@ -37,8 +37,7 @@ export class TagsComponent implements OnInit {
 
   ngOnInit(): void {
     this._route.queryParamMap.subscribe(res => {
-        this.page = !isNaN(Number(res.get('page'))) && Number(res.get('page')) > 0 ? Number(res.get('page')) : 1
-        console.log(this.page)
+      this.page = !isNaN(Number(res.get('page'))) && Number(res.get('page')) > 0 ? Number(res.get('page')) : 1
       this.getTags();
     });
   }
@@ -48,7 +47,6 @@ export class TagsComponent implements OnInit {
       this.tags = tags.data;
       delete tags.data;
       this.metadata = tags;
-      console.log(tags)
     }, err => {
       console.log(err)
     }, () => { });
