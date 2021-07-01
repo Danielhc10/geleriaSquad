@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
   logOut(): void{
     this._auth.logoutUser()
     this._user.destroy()
-    console.log("amonos alv!");
+    console.log("El usuario ha salido");
     
   }
 }
