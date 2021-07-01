@@ -1,0 +1,13 @@
+<section class="py-5">
+  <div class="container">
+    <div class="filtr-controls">
+      <span [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Todas</span>
+      <span [routerLink]="['/home/trends']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}">Tendencias</span>
+    </div>
+    <div class="row filtr-container">
+      <post *ngFor='let post of posts' [post]="post"></post>
+    </div>
+    <pagination *ngIf="trendsEnabled()" [route]="['/home']" [metadata]="metadata" handling="merge"></pagination>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+#paginacion {
+  /*text-align: center;*/
+  margin: auto;
+}
+
+.list-group-item-action:active {
+  color: #010101;
+  background-color: rgba(169, 163, 163, 0.32);
+  cursor: pointer;
+}
+
+.pagination-tag {
+  display: inline-block;
+}

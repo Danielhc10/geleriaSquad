@@ -1,0 +1,6 @@
+<span *ngIf="_user.logged; else img" [ngClass]="{ 'licked': bool }" (dblclick)="licked($event)">
+  <img loading="lazy" class="img-fluid" [src]="post.image.url">
+</span>
+<ng-template #img>
+  <img loading="lazy" class="img-fluid" [src]="post.image.url">
+</ng-template>
