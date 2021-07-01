@@ -6,7 +6,7 @@
   </span>
   <input #tagInput (keydown)="checkBackspaceOnEmpty($event)" (keyup.ArrowDown)="optionsFocus(options)"
     (focus)="travelOption = false" (blur)="blurTag()" [formControl]="stringTag" id="tag-input"
-    placeholder="tag - comma separated" />
+    placeholder="Selecciona el tag" />
 </div>
 <span #options class="options">
   <button *ngFor="let option of regexOptions; index as i" (keyup)="nextFocus($event, i)" (click)="optionClick(option)"
