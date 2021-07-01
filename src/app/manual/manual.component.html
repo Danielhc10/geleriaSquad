@@ -1,37 +1,247 @@
 <div class='container'>
-    <aside class="menu">
-      <p class="menu-label">
-        General
-      </p>
-      <ul class="menu-list">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Customers</a></li>
-      </ul>
-      <p class="menu-label">
-        Administration
-      </p>
-      <ul class="menu-list">
-        <li><a href="#">Team Settings</a></li>
-        <li>
-          <a class="is-active" href="#">Manage Your Team</a>
-          <ul>
-            <li><a href="#">Members</a></li>
-            <li><a href="#">Plugins</a></li>
-            <li><a href="#">Add a member</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Invitations</a></li>
-        <li><a href="#">Authentication</a></li>
-      </ul>
-      <p class="menu-label">
-        Transactions
-      </p>
-      <ul class="menu-list">
-        <li><a href="#">Payments</a></li>
-        <li><a href="#">Transfers</a></li>
-        <li><a href="#">Balance</a></li>
-      </ul>
-    </aside>
-    <section class='cards'>
-    </section>
-  </div>
+  <aside class="menu">
+    <p class="menu-label">
+      General
+    </p>
+    <ul class="menu-list">
+      <li class="scroll" (click)="scroll(to1)">Distribución general de la página</li>
+    </ul>
+    <ul class="menu-list">
+      <li class="scroll" (click)="scroll(to2)">Barra de menús (1)</li>
+      <li>
+        Manage Your Team
+        <ul>
+          <li>Members</li>
+          <li>Plugins</li>
+          <li>Add a member</li>
+        </ul>
+      </li>
+      <li>Invitations</li>
+      <li>Authentication</li>
+    </ul>
+    <p class="menu-label">
+      Transactions
+    </p>
+    <ul class="menu-list">
+      <li>Payments</li>
+      <li>Transfers</li>
+      <li>Balance</li>
+    </ul>
+  </aside>
+  <section class='cards'>
+    <h1 #to1><strong>DISTRIBUCION GENERAL DE LA PAGINA</strong><strong>&nbsp;</strong></h1>
+    <p>La distribución de dicha ventana se basa en la estructura siguiente</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793914.png">
+    </p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793997.png">
+    </p>
+    <br>
+    <p>***** estructura estÁ conformada por:</p>
+    <ul>
+      <li>Barra de menús (1)</li>
+      <li>Área de ******** (2)</li>
+      <li>Á*** de inicio de sesión (3)</li>
+      <li>Todas las fotos (4)</li>
+      <li>Tendencias (5)</li>
+      <li>Paginación (6)</li>
+      <li>Informacion (7)</li>
+    </ul>
+    <h2 #to2><strong>BARRA DE MENúS (1)</strong></h2>
+    <p>**** barra consta de las siguientes secciones, descritas a continuación&nbsp;</p>
+    <ul>
+      <li>Inicio&nbsp;</li>
+      <li>Tags</li>
+    </ul>
+    <p>De forma predeterminada cuando accedemos a la pagina nos posiciona en la opción ** inicio la cual consta
+      de todos los menús ya antes mencionados, esta barra es independiente de que sección se encuentre
+      activa.&nbsp;</p>
+    <p>
+      <strong>Tags</strong>
+    </p>
+    <p>Los tags es un ******* en ** cual se ********* un ******** de imÁgenes de acuerdo con grupo de
+      categorias o Áreas donde ********* dicha imagen, ** sea ** acuerdo con su tipo de contenido o
+      clasificación. Siendo la propia pÁ**** web ** encargada de la creación de dichas
+      categorias, para posteriormente ser usadas por el usuario.&nbsp;</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793955.png">
+    </p>
+    <p>
+      <strong>Inicio&nbsp;</strong>
+    </p>
+    <p>La pÁgina de inicio se centra en la proyección de las diferentes estructuras que consta la
+      pÁgina, pero su principal objetivo ** mostrar las imÁgenes que ** han estado ******** a la pagina
+      como una ***** previa de lo *** esta contiene, *** la necesidad de entrar a inicio de sesión o de
+      registrarse.&nbsp;</p>
+    <h2><strong>AREA DE REGISTRO (2)</strong></h2>
+    <p>Esta ventana de registro **** ser llenada o contestada por datos que son esenciales para la creación de
+      un nuevo usuario, esta consta de 4 campos los cuales son:</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img1625177939.png">
+    </p>
+    <p>Parametros para registro</p>
+    <ul>
+      <li>Nombre de usuario (1)</li>
+      <li>Correo (2)</li>
+      <li>Contraseña (3)</li>
+      <li>Botón de ********* (4)</li>
+    </ul>
+    <p>
+      <strong>Nombre de usuario</strong>
+    </p>
+    <p>El ****** ** usuario es un dato de identificación, el cual podr&iacute;a ser desde el nombre de la
+      persona o apodo, este nombre ya es de acuerdo al ***** de cada usuario.&nbsp;</p>
+    <p>
+      <strong>Correo</strong>
+    </p>
+    <p>El correo electró**** es con el cual se iniciar&iacute;a un inicio de sesión, este correo puede
+      ser tanto **** Gmail, Hotmail entre otros. Siendo un requisito obligatorio para la creación de una nueva
+      cuenta de usuario.</p>
+    <p>
+      <strong>Contraseña</strong>
+    </p>
+    <p>** contraseña no cumple con una medida estricta de como de ser colocada, teniendo **** libertad para los
+      usuarios el uso ** numeros, letras mayúsculas y signos de puntuación en el orden que prefieran o
+      si es el caso, no hacer uso ** algunos de estos.&nbsp;</p>
+    <p>
+      <strong>Botón de registrar</strong>
+    </p>
+    <p>Por último, en **** ventana, nos encontramos con el botón de registrar el cual una vez *********
+      el ******** nos permitirÁ guardar en la base ** datos el ***** usuario ** creado.&nbsp;</p>
+    <p>Ejemplo:</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793988.png">
+    </p>
+    <p>&nbsp;</p>
+    <h2><strong>AREA DE INICIO DE SESION (3)</strong></h2>
+    <p>Esta ventana de inicio de sesión se clasifica de la siguiente manera:</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793926.png">
+    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>Parametros para inicio de sesión:</p>
+    <ul>
+      <li>Correo</li>
+      <li>Contraseña</li>
+      <li>Botón de inicio</li>
+    </ul>
+    <p>
+      <strong>Correo&nbsp;</strong>
+    </p>
+    <p>En esta opción es importante acordarse del ****** electrónico ya utilizado para la
+      creación de un ***** usuario (Área de registro). Sirvi&eacute;ndonos para poder acceder a nuestra
+      cuenta.</p>
+    <p>
+      <strong>Contraseña&nbsp;</strong>
+    </p>
+    <p>La contraseña, **** tambien el correo es ********** para ** ****** ** sesión seguro, ** por eso
+      por ** que ***** datos deben de ser recordados *** parte del usuario.&nbsp;</p>
+    <p>
+      <strong>Botón ** inicio</strong>
+    </p>
+    <p>Al terminar con ** ingreso de ambos datos anteriormente mencionados, damos por concluido nuestro inicio de
+      sesión al posicionarnos en esta Área y dar clic, de esta manera accederemos a nuestra cuenta
+      teniendo permisos para subir imÁgenes, entre otras opciones.</p>
+    <p>Ejemplo:</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793916.png">
+    </p>
+    <h3><strong>&nbsp;</strong></h3>
+    <h3><strong>************* DE VENTANA DE USUARIO</strong></h3>
+    <p>Una *** que se haya ingresado a esta ventana, a trav&eacute;s de un inicio ** sesión nos *************
+      con la siguiente estructura.</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793922.png">
+    </p>
+    <p>Clasificación de ventana de usuario</p>
+    <ul>
+      <li>Barra de menús (1) v&eacute;ase pagina</li>
+      <li>******* (2)</li>
+      <li>Opciones (3)</li>
+    </ul>
+    <p>
+      <strong>Usuario</strong>
+    </p>
+    <p>Se encuentra solo el nombre ** usuario *** posteriormente se ****** en el registro de usuario. Es una vista
+      previa de este, sin contenido o ventana.</p>
+    <p>
+      <strong>Opciones&nbsp;</strong>
+    </p>
+    <p>En esta nueva pestaña se encuentran 2 opciones que *** aparece una vez ingresado el ******* (como ya lo
+      hemos explicado) siendo estas:&nbsp;</p>
+    <ul>
+      <li>Nuevo post&nbsp;</li>
+      <li>Salir</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h3><strong>CLASIFICACION DE VENTANA DE OPCIONES</strong></h3>
+    <p>Es en esta ventana en ***** nos encontramos con dos ******** exclusivas para el usuario, *** cuales son
+      aquellas ya anteriormente mencionadas.&nbsp;</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793956.png">
+    </p>
+    <p>
+      <strong>Nuevo post</strong>
+    </p>
+    <p>En esta opción ** donde se genera o carga una nueva imagen **** posteriormente ser subida a la pagina
+      web, siguiendo 2 sencillos campos *** se deben de tomar en cuenta a la hora de subir dicha imagen.</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793918.png">
+    </p>
+    <ul>
+      <li><em>Elegir archivo&nbsp;</em></li>
+    </ul>
+    <p>Es en esta opción en ***** el usuario debe de buscar a trav&eacute;s de ** computador la ruta en la cual
+      se encuentra dicha imagen *** desee subir, una vez encontrada ** ruta, se debe de seleccionar y dar en la
+      opción subir.</p>
+    <ul>
+      <li><em>Elegir tag</em></li>
+    </ul>
+    <p>Eligiendo ** tag es mÁs fÁcil que el usuario pueda ordenar o clasificar dichas fotos para asi
+      posteriormente se puedan buscar con mayor facilidad, ******* en cuenta *** *** categorias son creadas por la
+      propia pÁgina web.</p>
+    <p>
+      <strong>&nbsp;</strong>
+    </p>
+    <p>
+      <strong>Salir</strong>
+    </p>
+    <p>Al elegir esta opción, el usuario regresar&iacute;a a ** pÁgina principal</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img1625177940.png">
+    </p>
+    <p>&nbsp;</p>
+    <h2><strong>TODAS LAS FOTOS (4)</strong></h2>
+    <p>En esta sección ******** fotos subidas por parte de todos los usuarios, mostrando una vista previa sin
+      necesidad de haber iniciado sesión usted podrÁ visualizar esta ventana.</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img1625177941100.png">
+    </p>
+    <h2><strong>TENDENCIAS (5)</strong></h2>
+    <p>Al ***** que ** la sección &ldquo;todas&rdquo; se puede visualizar ya uno se encuentre en sesión
+      o no, ya *** por ser parte del home o pagina de inicio, estas pueden ser previsualizadas por cualquier usuario o
+      no usuario de manera sencilla. Es entonces que las tendencias tienen como objetivo ******* aquellas fotos mas
+      likeadas por parte de los usuarios, sin importar fecha.&nbsp;</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img1625177942.png">
+    </p>
+    <h2><strong>PAGINACION (6)</strong></h2>
+    <p>Como su nombre lo indica en esta sección de la pÁgina web, contamos *** una paginación que
+      nos ayuda a tener una mejor navegación por las diferentes ******* de fotos. AyudÁndonos ha
+      adelantarnos de pagina o a su vez regresando a paginas *********** con mayor facilidad y rapidez&nbsp;</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517794188.png"
+        alt="Interfaz de usuario grÃ¡fica">
+    </p>
+    <p>&nbsp;</p>
+    <h2><strong>INFORMACION (7)</strong></h2>
+    <p>La sección de informacion **** conformado por dos apartados en *** cuales ******** datos tanto de los
+      creados de la pagina web como tambien *** breve descripcion.</p>
+    <p>
+      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img1625177941.png">
+    </p>
+  </section>
+</div>

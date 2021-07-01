@@ -12,4 +12,7 @@ export class ManualComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+  }
 }
