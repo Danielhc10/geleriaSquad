@@ -1,6 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Host, Injectable } from '@angular/core';
 import { environment } from '@environments/environment';
+import { ITag } from '@principal/models/tag';
 import { DataPaginated } from '@shared/models/interfaces';
 import { IPost } from "../../models/post";
 
@@ -31,5 +32,14 @@ export class ArrivalsService {
     return this._http.get<{ data: { toogle: boolean } }>(`${this.url}/like`, { params })
   }
 
+  getTags(page:number){
+    return this._http.get<DataPaginated<ITag>>(`${this.url}/tags/${page}`);
+  }
+
+  listTags(){
+    return this._http.get<{ data: ITag[]}>(`${this.url}/tags`);
+  }
+
 }
+
 
