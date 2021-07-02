@@ -1,32 +1,24 @@
 <div class='container'>
   <aside class="menu">
     <p class="menu-label">
-      General
+      MENÚ
     </p>
     <ul class="menu-list">
       <li class="scroll" (click)="scroll(to1)">Distribución general de la página</li>
     </ul>
     <ul class="menu-list">
       <li class="scroll" (click)="scroll(to2)">Barra de menús (1)</li>
-      <li>
-        Manage Your Team
-        <ul>
-          <li>Members</li>
-          <li>Plugins</li>
-          <li>Add a member</li>
-        </ul>
-      </li>
-      <li>Invitations</li>
-      <li>Authentication</li>
+      <li class="scroll" (click)="scroll(to3)">Área de registro</li>
+      <li class="scroll" (click)="scroll(to4)">Área de inicio de sesión</li>
+      <li class="scroll" (click)="scroll(to5)">Clasificación de ventana de usuario</li>
+      <li class="scroll" (click)="scroll(to6)">Clasificación de ventana de opciones</li>
+      <li class="scroll" (click)="scroll(to7)">Todas las fotos</li>
+      <li class="scroll" (click)="scroll(to8)">Tendencias</li>
+      <li class="scroll" (click)="scroll(to9)">Paginación</li>
+      <li class="scroll" (click)="scroll(to10)">Información</li>
+
     </ul>
-    <p class="menu-label">
-      Transactions
-    </p>
-    <ul class="menu-list">
-      <li>Payments</li>
-      <li>Transfers</li>
-      <li>Balance</li>
-    </ul>
+    
   </aside>
   <section class='cards'>
     <h1 #to1><strong>DISTRIBUCION GENERAL DE LA PAGINA</strong><strong>&nbsp;</strong></h1>
@@ -40,16 +32,16 @@
     <br>
     <p>La estructura está conformada por:</p>
     <ul>
-      <div>-	Barra de menús (1)</div>
-      <div>-	Área de registro (2)</div>
-      <div>-	Área de inicio de sesión (3)</div>
-      <div>-	Todas las fotos (4)</div>
-      <div>-	Tendencias (5)</div>
-      <div>-	Paginación (6)</div>
-      <div>-	Informacion (7)</div>
+      <div>- Barra de menús (1)</div>
+      <div>- Área de registro (2)</div>
+      <div>- Área de inicio de sesión (3)</div>
+      <div>- Todas las fotos (4)</div>
+      <div>- Tendencias (5)</div>
+      <div>- Paginación (6)</div>
+      <div>- Informacion (7)</div>
 
     </ul>
-    <h2 #to2><strong>BARRA DE MENúS (1)</strong></h2>
+    <h2 #to2><strong>BARRA DE MENÚS (1)</strong></h2>
     <p>En esta barra consta de las siguientes secciones, descritas a continuación&nbsp;</p>
 
     <ul>
@@ -76,7 +68,7 @@
       pÁgina, pero su principal objetivo es mostrar las imágenes que se han estado subiendo a la pagina
       como una vista previa de lo que esta contiene, sin la necesidad de entrar a inicio de sesión o de
       registrarse.&nbsp;</p>
-    <h2><strong>AREA DE REGISTRO (2)</strong></h2>
+    <h2 #to3><strong>AREA DE REGISTRO (2)</strong></h2>
     <p>Esta ventana de registro debe ser llenada o contestada por datos que son esenciales para la creación de
       un nuevo usuario, esta consta de 4 campos los cuales son:</p>
     <p>
@@ -116,7 +108,7 @@
       <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793988.png">
     </p>
     <p>&nbsp;</p>
-    <h2><strong>AREA DE INICIO DE SESION (3)</strong></h2>
+    <h2 #to4><strong>AREA DE INICIO DE SESION (3)</strong></h2>
     <p>Esta ventana de inicio de sesión se clasifica de la siguiente manera:</p>
     <p>
       <img src="https://res.cloudinary.com/jorgedelangel/image/upload/v1625190277/manual/3_sgg5xk.png">
@@ -150,100 +142,104 @@
     <p>
       <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793916.png">
     </p>
-    <h3><strong>&nbsp;</strong></h3>
-    <h3><strong>CLASIFICACIÓN DE VENTANA DE USUARIO</strong></h3>
-    <p>Una vez que se haya ingresado a esta ventana, a través de un inicio se sesión nos encontraremos
-      con la siguiente estructura.</p>
-    <p>
-      <img src="https://res.cloudinary.com/jorgedelangel/image/upload/v1625190457/manual/4_o4vhxt.png">
-    </p>
-    <p>Clasificación de ventana de usuario</p>
-    <ul>
-      <li>Barra de menús (1) véase pagina</li>
-      <li>Usuario (2)</li>
-      <li>Opciones (3)</li>
-    </ul>
-    <p>
-      <strong>Usuario</strong>
-    </p>
-    <p>Se encuentra solo el nombre de usuario que anteriormente se registro en el registro de usuario. Es una vista
-      previa de este, sin contenido o ventana.</p>
-    <p>
-      <strong>Opciones&nbsp;</strong>
-    </p>
-    <p>En esta nueva pestaña se encuentran 2 opciones que *** aparece una vez ingresado el ******* (como ya lo
-      hemos explicado) siendo estas:&nbsp;</p>
-    <ul>
-      <li>Nuevo post&nbsp;</li>
-      <li>Salir</li>
-    </ul>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <h3><strong>CLASIFICACION DE VENTANA DE OPCIONES</strong></h3>
-    <p>Es en esta ventana en ***** nos encontramos con dos ******** exclusivas para el usuario, *** cuales son
-      aquellas ya anteriormente mencionadas.&nbsp;</p>
-    <p>
-      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793956.png">
-    </p>
-    <p>
-      <strong>Nuevo post</strong>
-    </p>
-    <p>En esta opción ** donde se genera o carga una nueva imagen **** posteriormente ser subida a la pagina
-      web, siguiendo 2 sencillos campos *** se deben de tomar en cuenta a la hora de subir dicha imagen.</p>
-    <p>
-      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793918.png">
-    </p>
-    <ul>
-      <li><em>Elegir archivo&nbsp;</em></li>
-    </ul>
-    <p>Es en esta opción en ***** el usuario debe de buscar a trav&eacute;s de ** computador la ruta en la cual
-      se encuentra dicha imagen *** desee subir, una vez encontrada ** ruta, se debe de seleccionar y dar en la
-      opción subir.</p>
-    <ul>
-      <li><em>Elegir tag</em></li>
-    </ul>
-    <p>Eligiendo ** tag es mÁs fÁcil que el usuario pueda ordenar o clasificar dichas fotos para asi
-      posteriormente se puedan buscar con mayor facilidad, ******* en cuenta *** *** categorias son creadas por la
-      propia pÁgina web.</p>
-    <p>
-      <strong>&nbsp;</strong>
-    </p>
-    <p>
-      <strong>Salir</strong>
-    </p>
-    <p>Al elegir esta opción, el usuario regresar&iacute;a a ** pÁgina principal</p>
-    <p>
-      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img1625177940.png">
-    </p>
-    <p>&nbsp;</p>
-    <h2><strong>TODAS LAS FOTOS (4)</strong></h2>
-    <p>En esta sección ******** fotos subidas por parte de todos los usuarios, mostrando una vista previa sin
-      necesidad de haber iniciado sesión usted podrÁ visualizar esta ventana.</p>
-    <p>
-      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img1625177941100.png">
-    </p>
-    <h2><strong>TENDENCIAS (5)</strong></h2>
-    <p>Al ***** que ** la sección &ldquo;todas&rdquo; se puede visualizar ya uno se encuentre en sesión
-      o no, ya *** por ser parte del home o pagina de inicio, estas pueden ser previsualizadas por cualquier usuario o
-      no usuario de manera sencilla. Es entonces que las tendencias tienen como objetivo ******* aquellas fotos mas
-      likeadas por parte de los usuarios, sin importar fecha.&nbsp;</p>
-    <p>
-      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img1625177942.png">
-    </p>
-    <h2><strong>PAGINACION (6)</strong></h2>
-    <p>Como su nombre lo indica en esta sección de la pÁgina web, contamos *** una paginación que
-      nos ayuda a tener una mejor navegación por las diferentes ******* de fotos. AyudÁndonos ha
-      adelantarnos de pagina o a su vez regresando a paginas *********** con mayor facilidad y rapidez&nbsp;</p>
-    <p>
-      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517794188.png"
-        alt="Interfaz de usuario grÃ¡fica">
-    </p>
-    <p>&nbsp;</p>
-    <h2><strong>INFORMACION (7)</strong></h2>
-    <p>La sección de informacion **** conformado por dos apartados en *** cuales ******** datos tanto de los
-      creados de la pagina web como tambien *** breve descripcion.</p>
-    <p>
-      <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img1625177941.png">
-    </p>
+
+    <h2 #to5><strong>CLASIFICACIÓN DE VENTANA DE USUARIO</strong></h2>
+      <p>Una vez que se haya ingresado a esta ventana, a través de un inicio se sesión nos encontraremos
+        con la siguiente estructura.</p>
+      <p>
+        <img src="https://res.cloudinary.com/jorgedelangel/image/upload/v1625190457/manual/4_o4vhxt.png">
+      </p>
+      <p>Clasificación de ventana de usuario</p>
+      <ul>
+        <li>Barra de menús (1) véase pagina</li>
+        <li>Usuario (2)</li>
+        <li>Opciones (3)</li>
+      </ul>
+      <p>
+        <strong>Usuario</strong>
+      </p>
+      <p>Se encuentra solo el nombre de usuario que anteriormente se registro en el registro de usuario. Es una vista
+        previa de este, sin contenido o ventana.</p>
+      <p>
+        <strong>Opciones&nbsp;</strong>
+      </p>
+      <p>En esta nueva pestaña se encuentran 2 opciones que *** aparece una vez ingresado el ******* (como ya lo
+        hemos explicado) siendo estas:&nbsp;</p>
+      <ul>
+        <li>Nuevo post&nbsp;</li>
+        <li>Salir</li>
+      </ul>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <h2 #to6><strong>CLASIFICACION DE VENTANA DE OPCIONES</strong></h2>
+        <p>En esta opción es donde se genera o carga una nueva imagen para posteriormente ser subida a la pagina web,
+          siguiendo 2 sencillos campos que se deben de tomar en cuenta a la hora de subir dicha imagen.&nbsp;</p>
+        <p>
+          <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793956.png">
+        </p>
+        <p>
+          <strong>Nuevo post</strong>
+        </p>
+        <p>En esta opción es donde se genera o carga una nueva imagen para posteriormente ser subida a la pagina web,
+          siguiendo 2 sencillos campos que se deben de tomar en cuenta a la hora de subir dicha imagen.</p>
+        <p>
+          <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517793918.png">
+        </p>
+        <ul>
+          <li><em>Elegir archivo&nbsp;</em></li>
+        </ul>
+        <p>Es en esta opción en donde el usuario debe de buscar a través de su computador la ruta en la cual se
+          encuentra
+          dicha imagen que desee subir, una vez encontrada la ruta, se debe de seleccionar y dar en la opción subir.</p>
+        <ul>
+          <li><em>Elegir tag</em></li>
+        </ul>
+        <p>En esta opción es donde se genera o carga una nueva imagen para posteriormente ser subida a la pagina web,
+          siguiendo 2 sencillos campos que se deben de tomar en cuenta a la hora de subir dicha imagen.1</p>
+        <p>
+          <strong>&nbsp;</strong>
+        </p>
+        <p>
+          <strong>Salir</strong>
+        </p>
+        <p>Al elegir esta opción, el usuario regresar&iacute;a a la página principal</p>
+        <p>
+          <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img1625177940.png">
+        </p>
+        <p>&nbsp;</p>
+        <h2 #to7><strong>TODAS LAS FOTOS (4)</strong></h2>
+        <p>En esta sección aparecen fotos subidas por parte de todos los usuarios, mostrando una vista previa sin
+          necesidad
+          de haber iniciado sesión usted podrá visualizar esta ventana.</p>
+        <p>
+          <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img1625177941100.png">
+        </p>
+        <h2 #to8><strong>TENDENCIAS (5)</strong></h2>
+        <p>Al igual que en la sección “todas” se puede visualizar ya uno se encuentre en sesión o no, ya que, por ser
+          parte
+          del home o página de inicio, estas pueden ser previsualizadas por cualquier usuario o no usuario de manera
+          sencilla.
+          Es entonces que las tendencias tienen como objetivo mostrar aquellas fotos más likeadas por parte de los
+          usuarios,
+          sin importar fecha. &nbsp;</p>
+        <p>
+          <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img1625177942.png">
+        </p>
+        <h2 #to9><strong>PAGINACION (6)</strong></h2>
+        <p>Como su nombre lo indica en esta sección de la página web, contamos con una paginación que nos ayuda a tener
+          una
+          mejor navegación por las diferentes páginas de fotos. Ayudándonos a adelantarnos de página
+          o a su vez regresando a paginas posteriores con mayor facilidad y rapidez ilidad y rapidez&nbsp;</p>
+        <p>
+          <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img162517794188.png"
+            alt="Interfaz de usuario grÃ¡fica">
+        </p>
+        <p>&nbsp;</p>
+        <h2 #to10><strong>INFORMACION (7)</strong></h2>
+        <p>La sección de información está conformada por dos apartados en los cuales menciona datos tanto
+          de los creados de la página web como también una breve descripción.</p>
+        <p>
+          <img src="https://myfiles.space/user_files/90854_906e197dad986b7d/90854_custom_files/img1625177941.png">
+        </p>
   </section>
 </div>
